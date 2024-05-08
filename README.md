@@ -1,21 +1,11 @@
-# YewChat 💬
+# Tutorial 3: WebChat using yew
 
-> Source code for [Let’s Build a Websocket Chat Project With Rust and Yew 0.19 🦀](https://fsjohnny.medium.com/lets-build-a-websockets-project-with-rust-and-yew-0-19-60720367399f)
+## 3.1 Original code
+### Running yewchat
+![websocket](img/Screenshot%20(1592).png)
 
-## Install
-
-1. Install the required toolchain dependencies:
-   ```npm i```
-
-2. Follow the YewChat post!
-
-## Branches
-
-This repository is divided to branches that correspond to the blog post sections:
-
-* main - The starter code.
-* routing - The code at the end of the Routing section.
-* components-part1 - The code at the end of the Components-Phase 1 section.
-* websockets - The code at the end of the Hello Websockets! section.
-* components-part2 - The code at the end of the Components-Phase 2 section.
-* websockets-part2 - The code at the end of the WebSockets-Phase 2 section.
+### Running chat app + websocket
+![1](img/Screenshot%20(1593).png)
+![2](img/Screenshot%20(1594).png)
+![3](img/Screenshot%20(1595).png)
+Pada tutorial ini, terdapat dua komponen utama yang dibutuhkan, yaitu websocket serta Yewchat itu sendiri. Websocket disini sama seperti pada tutorial sebelumnya, yaitu seperti ```server.rs``` serta memberikan hubungan komunikasi antara server dan client. Yewchat disini akan berfungsi seperti ```client.rs```, dimana kita memberikan username serta mengirim message. Message yang dikirim nanti akan terlihat oleh client-client yang lain serta ditampilkan pula username dari client tersebut. Dalam contoh ini, saya membuat tiga buah client dengan nama user yang berbeda-beda. Pesan yang dikirimkna oleh client akan diteruskan oleh server dan tampil di client lain.
